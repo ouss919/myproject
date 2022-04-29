@@ -1,0 +1,184 @@
+
+*{margin: 0;padding: 0;box-sizing: border-box; }
+/*---------------------------------------------------------*/
+label{position: relative;}
+
+#titre{color: #DBC8B3; background: #072C42; font-size: 2rem; text-align: center;}
+
+html body{background:#06273A ;}
+body{width: fit-content;}
+
+.bou{
+background: transparent;
+border:#072C42;
+width: 186px;
+font-size: 1.22em;
+margin: 1rem 1.2rem;
+padding: 5px;
+color: #FFF9EC;
+position:relative;
+;
+}
+
+#btnpr{width: 181.5px; text-align: center; }
+
+.boupr{background: #072C42;
+border: #072C42;
+color:#FFF9EC;
+padding: 7px;
+margin: 0.9rem 1.2rem 0.9rem 1.2rem;
+font-size: 1.2rem;
+width: 186px;
+}
+
+
+.boupr:hover{background:#1e465e ; width: 186px; border-radius: 5px; }
+
+.w1{position: relative;bottom: 115px; margin: 0;}
+ol{
+    list-style: none;
+    position: relative;
+    background: #072C42;
+    margin:0 ;
+    width: min-content;
+    left: 74%;
+    top: -100px;
+    box-sizing: border-box
+
+    
+}
+
+.bou:hover{background:#1e465e; margin: 1rem 1.2rem; padding: 5px; border-radius: 3px;}
+/*---------------------------------------------------------*/
+#dhome{position:relative;
+    background:#d3c1ac;
+color:#06293C ;
+padding: 100px;
+width: 678.5px;
+height: 523px;
+left: 50%;
+text-align: center;}
+
+#gd{font-size: 3rem;}
+
+.phome{font-size: 1.3rem;margin-top: 35px;}
+
+#text0{margin-top: -5px;}
+
+img{position: relative;height: 523px; width: 675px;top: -523px;}
+
+#tab{position: relative;bottom: 400px;color:rgb(230, 204, 208); left: 18%; ;}
+
+.c{font-size: 1.3rem; position: relative; top: 10px; color:#f5ead4;}
+
+td{width: 300px; text-align: center ; padding: 0.5rem 1.2rem; border: 20px solid #06273A; border-bottom: 0; }
+label input
+{
+  background: transparent;  
+  color:#2e2a2a;
+  border: 2px solid #7a7a7a;
+  border-radius: 5px;
+  padding: 1rem 1.2rem;
+  width: 300px;
+  transition: all 0.5s;
+  margin: 10px;
+
+}
+
+label input:hover{border-color: #ff4754;}
+
+.pwicon{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    color: #2e2a2a;
+    transition: all 0.5s;
+    right: 20px;
+}
+
+.pwicon:hover{cursor: pointer;color: #ff4754;}
+
+header nav{display: flex;justify-content: right;align-items: center;background: #072C42; max-width: fit-content;}
+.d1{
+font-size: 1.5rem;
+margin: 10px;
+padding: 5px;
+justify-content: right;
+color: rgb(230, 204, 208);
+}
+
+.ap{position: relative;
+    bottom:200px;
+    color:rgb(230, 204, 208);
+    width: 900px;
+    text-align:justify;
+    left: 180px;
+    font-size: 1.2rem;
+margin: 100px;
+}
+.titap{padding: 20px; color:#f5ead4 ; position: relative; left: -15px;}
+#cont{position: relative; bottom: 50px;}
+
+#dlog ,#logi{position: relative;
+text-align: center;
+background: rgb(240, 233, 207);
+border-radius: 5px;
+margin-left: 450px;
+margin-bottom: 420px;
+margin-right: 450px;
+margin-top:-1050px ;
+padding: 50px;
+}
+
+.h1logsig{position: relative; top:-20px; color:#06293C ; margin: 30px; margin-top: 20px;}
+
+.cnx{background: #072C42;
+color: #DBC8B3; 
+border:#072C42 ; 
+border-radius: 3px;
+margin: 10px; 
+padding: 7px;
+font-size: 1.1rem;
+cursor: pointer;}
+
+.cnx:hover{background:#1e465e; border:#1e465e;}
+
+#insbtn{margin: 35px; font-size: 1rem; }
+#btni{
+     background: transparent;
+      font-size: 1rem;
+       margin: 5px;
+       padding: 5px;
+       color:#072C42;
+       border: 0.1px solid#7a7a7a;
+       cursor: pointer;
+    }
+#btni:hover{background: #072C42;
+    color: #DBC8B3; 
+    border:#072C42 ; 
+    border-radius: 3px;
+padding: 6px;
+margin: 5px;}
+
+.icross{color: #585555;
+font-size: 25px;
+position: relative;
+top: -125px;
+right: -200px;
+padding: 0;
+margin: 0;
+cursor: pointer;}
+
+.icross:hover{color: #ff4754;}
+
+.icsm{font-size: 30px; position: relative;margin: 25px; top: -10px;  padding-left: 10px; left: -41px; cursor: pointer;}
+.icsm:hover{color: #ff4754;}
+.tab2,.tr3 {border:2px solid #1e465e; font-size: 1.2rem; }
+.tabexp{position: relative; left: 220px; top: 100px; color: #06293C; background:  #d3c1ac; padding: 7px; width: fit-content; }
+#id3{position: relative; text-align: left; bottom: 65px;}
+.toto{font-size: 1.6rem;}
+ 
+.nav{padding-right: 690px;}

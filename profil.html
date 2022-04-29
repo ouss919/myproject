@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Different Things </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javas.js"></script>
+    
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    
+
+</head>
+<body style="overflow: hidden;">
+    <header class="nav"> 
+        
+        <nav class="nav">
+            <input class="bou" type="button" value="Accueil" onclick="window.location.href='test2.html'">
+            <input class="bou" type="button" value="A propos" onclick="window.location.href='test2.html#ancre1'">
+            <input class="bou" type="button" value="signaux" onclick="window.location.href='profil.html'">
+           
+        </nav>
+    </header>
+
+    
+
+
+
+<div class="tabexp">
+
+    <table class="tab2">
+        <caption class="toto">Température</caption>
+        <tr class="tr3">
+            <td  class="tr3" rowspan="3"><p id="id3">Description </p></td>
+            <td class="tr3">27.0</td> 
+            <td class="tr3"><p>Visibilité</p>
+                <p>Publique</p></td></tr>
+        <div class="w2"><tr class="tr3"><td class="tr3">Emplacement </td><td class="tr3">Mot clé</td></tr>
+        <tr class="tr3"><td class="tr3">Paramètres</td><td class="tr3">Edité par</td></tr></div>
+
+
+    </table>
+
+
+</div>
+<script>
+    function ouvlog(bouton, id) {
+    var div = document.getElementById(id);
+    if(div.style.display=="none") { 
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+    var d=document.getElementById('logi');
+    if(d.style.display=="block")
+    {d.style.display="none"}
+  }
+
+
+  function ouvsig(bouton, id) {
+    var div = document.getElementById(id);
+    if(div.style.display=="none") { 
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+    var d=document.getElementById('dlog');
+    if(d.style.display=="block")
+    {d.style.display="none"}
+  }
+
+  function afficherListe(bouton,id)
+  {
+    var div=document.getElementById(id);
+    div.style.visibility="visible";
+  }
+
+function hideList(bouton,id)
+{
+  var div=document.getElementById(id);
+  div.style.visibility="hidden";
+}
+
+  function afficherh(bouton,id){
+    var div = document.getElementById(id);
+    if(div.style.visibility=="visible") { 
+      div.style.visibility="hidden";
+    } else {
+      div.style.visibility="visible"
+    }
+  }
+</script>
+
+</body>
+</html>

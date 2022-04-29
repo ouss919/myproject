@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Different Things </title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    
+
+</head>
+
+<body>
+    <header>
+        <p id="titre">Different Things</p>
+        <nav>
+            <input class="bou" type="button" value="Accueil" onclick="window.location.href='test2.html'">
+            <input class="bou" type="button" value="A propos" onclick="window.location.href='#ancre1'">
+            <input class="bou" type="button" value="signaux" onclick="window.location.href='Profil.html'">
+            <input class="bou"  type="button" value="Se connecter" onclick="ouvlog(this,'dlog');">
+            <input class="bou" type="button" value="S'inscrire" onclick="ouvsig(this,'logi');">
+            <input class="bou" id="btnpr" type="button" value="Profil" onmouseover="afficherListe(this,'proList')"
+            onclick="afficherh(this,'proList');" >
+        </nav>
+    </header>
+    
+
+
+
+ <div id="dhome">
+    <ol id="proList" style="visibility: hidden;" >
+        <li><input class="boupr" type="button" value="Compte"> </li>
+        <li><input  class="boupr" type="button" value="Ajouter un signal" onclick="window.location.href='signal.html'" ></li>
+        <li><input  class="boupr" type="button" value="Deconnecter"></li>
+    </ol>
+  <div class="w1" > 
+ <h1 id="gd">Different things</h1>
+ <p class="phome">Plateforme pour les concepteurs et développeurs IoT</p> <br>
+ <p class="phome" id="text0"> Inscrivez-vous si vous n'avez pas un compte</p><br>
+ </div>
+ </div>
+<div class="image">
+ <img src="iot8.jpg">
+</div>
+<!-----------------------------------------login---------------------------------------->
+ <div id="dlog"  style="display: none;">
+    <h1 class="h1logsig">Se connecter</h1>
+    <div class="icross"><i class="far fa-times-circle" onclick="fermer(this,'dlog')"></i></div>
+
+    <form id="loginf" method="GET" action="">
+    <label> <input id="mlog" type="email" name="emlog" placeholder="Votre email" required> </label><br>
+    <label> <input id="pwlog" type="password" name="mdplog" placeholder="Votre mot de passe" required>
+    <div class="pwicon">
+    <i data-feather="eye"> </i>
+    <i data-feather="eye-off"></i>
+    </div>
+    </label> <br>
+    </form>
+    <p><input class="cnx" type="submit" value="Connexion"></p>
+    <div id="insbtn"><p >Vous n'avez pas un compte?</p>
+    <p><input id="btni" type="button" value="Inscrivez-vous maintenant" onclick="ouvsig(this,'logi');"></p></div>
+</div>
+<!---------------------------------------------------------------------------------------------------------->
+
+<!------------------------------------signin------------------------------------------------->
+
+<div id="logi" style="display: none;">
+    <h1 class="h1logsig">S'inscrire</h1>
+    <div class="icross"><i class="far fa-times-circle" onclick="fermer(this,'logi')"></i></div>
+    <form id="signin" method="POST" action="">
+      
+        <label> <input id="mail1" type="email" name="email1" placeholder="Votre email" required> </label><br>
+        <label> <input id="mail2" type="email" name="email2" placeholder="Confirmez votre email" required></label><br>
+        <label> <input id="pw1" type="password" name="mdp1" placeholder="Votre mot de passe" required>
+        <div class="pwicon">
+            <i data-feather="eye"> </i>
+            <i data-feather="eye-off"></i>
+        </div>
+        </label> <br>
+    
+        <label> <input id="pw2" type="password" name="mdp2" placeholder="Confirmez votre mot de passe" required>
+         <div class="pwicon">
+            <i data-feather="eye"> </i>
+            <i data-feather="eye-off"></i>
+         </div>
+       </label><br>
+    </form>
+    
+    
+    
+    <input class="cnx" type="submit" value="Confirmer" >
+    <input class="cnx" type="reset" value="Annuler">
+    
+    </div>
+
+<!-------------------------------------------------------------------------------------->
+
+
+ <table id="tab">
+ <tr >
+     <td class="c">Concept</td>
+     <td class="c">Ai-je vraiment besoin?</td>
+     <td class="c">Qui voit mes signaux</td>
+ </tr>
+ <tr >
+     <td>Partagez et obtenez des connexions de la communauté vers des appareils physiques, 
+         des sites Web ou des applications avec ce compte.</td>
+     <td>Pas vraiment, mais ce serait bien d'avoir un portefeuille de connexions accessibles de manière sociale </td>
+     <td>Qui tu veux. Les signaux peuvent être partagés en privé ou publiés pour tout le monde</td>
+ </tr>
+</table>
+<div class="ap" id="ancre1">
+<h2 class="titap">A propos</h2>
+<p>Different Things est une plate-forme communautaire IoT open-source pour l'enregistrement de données et l'échange de données à distance.
+    Le cirque des objets peut être utilisé pour le développement, l'éducation, les objectifs sociaux et les affaires.
+    N'hésitez pas à utiliser cet outil pour gérer vos données sur une plateforme distante et vous connecter avec d'autres utilisateurs de la communauté.</p>
+</div>
+
+<div class="ap" id="cont">
+    <h2 class="titap">Contact</h2>
+    <p>Pour plus d'information veuillez nous contacter:</p>
+    <div class="icsm"><i class="fab fa-facebook-square"style="padding: 5px;" onclick="window.location.href='https://www.facebook.com'"></i>
+    <i class="fab fa-twitter-square" style="padding: 5px;" onclick="window.location.href='https://www.twitter.com'"></i>
+    <i class="fab fa-linkedin" style="padding: 5px;"onclick="window.location.href='https://www.linkedin.com'" ></i>
+    <i class="fas fa-envelope" style="padding: 5px;" onclick="window.location.href='mailto:tasnime.benhamouda@isticbc.org'"></i>
+</div>
+    
+
+<!----------------------------------------------------------------------------------------->
+<style>
+    label
+ {position: relative;}
+ label input
+ { 
+   background: transparent;  
+  color:#2e2a2a;
+  border: 2px solid #7a7a7a;
+  border-radius: 5px;
+  padding: 1rem 1.2rem;
+  width: 300px;
+  transition: all 0.5s;
+ }
+
+    label input:hover{
+        border-color: #ff4754;
+    }
+
+    .pwicon{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        color: #2e2a2a;
+        transition: all 0.5s;
+        right: 20px;
+
+    }
+    .feather-eye-off{
+        display: none;
+    }
+    .pwicon:hover
+    {
+        cursor: pointer;
+        color: #ff4754;
+    }
+    </style>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script> feather.replace();</script>
+    <script>
+        const eye = document.querySelector(".feather-eye");
+    const eyeoff = document.querySelector(".feather-eye-off");
+    const passwordField = document.querySelector("input[type=password]");
+
+    eye.addEventListener("click", () => {
+    eye.style.display = "none";
+    eyeoff.style.display = "block";
+
+    passwordField.type = "text";
+    });
+
+    eyeoff.addEventListener("click", () => {
+    eyeoff.style.display = "none";
+    eye.style.display = "block";
+
+    passwordField.type = "password";
+    });
+
+    </script>
+    <!------------------------------------------------------------------------------------------->
+
+<script>
+    function ouvlog(bouton, id) {
+    var div = document.getElementById(id);
+    if(div.style.display=="none") { 
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+    var d=document.getElementById('logi');
+    if(d.style.display=="block")
+    {d.style.display="none"}
+  }
+
+
+  function ouvsig(bouton, id) {
+    var div = document.getElementById(id);
+    if(div.style.display=="none") { 
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+    var d=document.getElementById('dlog');
+    if(d.style.display=="block")
+    {d.style.display="none"}
+  }
+
+  function afficherListe(bouton,id)
+  {
+    var div=document.getElementById(id);
+    div.style.visibility="visible";
+  }
+
+function hideList(bouton,id)
+{
+  var div=document.getElementById(id);
+  div.style.visibility="hidden";
+}
+
+  function afficherh(bouton,id){
+    var div = document.getElementById(id);
+    if(div.style.visibility=="visible") { 
+      div.style.visibility="hidden";
+    } else {
+      div.style.visibility="visible"
+    }
+  }
+
+  
+  function fermer(bouton, id)
+  {
+    var div = document.getElementById(id);
+    div.style.display = "none";
+
+  }
+
+////////////////////////////////////////////////
+function dbconnect()
+{
+    var mysql      = require('mysql');
+    var connection = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'root',
+    password : '',
+    database : 'use'
+    });
+
+    connection.connect();
+    return connection
+}
+
+  function insertuser(bouton,id1,id2,id3)
+{
+    var db= dbconnect();
+
+    var email=document.getElementById(id1);
+    var mdp=document.getElementById(id3);
+    var pseudo=document.getElementById(id2);
+
+    let crypto=require('crypto')
+
+    var hash = crypto.createHmac('sha256', mdp)
+                .update('gcftygb')
+                .digest('hex');
+
+    var data= [pseudo,email,mdp]
+    db.query("INSERT INTO user SET pseudo=? , email=? , mdp=?",data,(err,user,field)=>{
+
+    })
+}
+/////////////////////////////////////////
+
+</script>
+
+
+</body>
+</html>
